@@ -125,10 +125,18 @@ export default function LoginPage() {
           {error && <p className="text-sm text-red-600">{error}</p>}
         </form>
 
-        {mode === "signup" && (
+        {mode === "signup" ? (
           <p className="text-xs opacity-60">
             Anotá tu usuario y contraseña: los vas a necesitar para volver a
-            entrar y ver tus planes guardados.
+            entrar y ver tus planes guardados. No se envía ningún email.
+          </p>
+        ) : (
+          <p className="text-xs opacity-60">
+            ¿Olvidaste tu contraseña? Escribí a{" "}
+            <a href="mailto:david.moreira@fce.unam.edu.ar" className="underline">
+              david.moreira@fce.unam.edu.ar
+            </a>{" "}
+            indicando tu nombre de usuario.
           </p>
         )}
       </div>
