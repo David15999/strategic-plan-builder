@@ -1,0 +1,305 @@
+{
+  "cadena_valor": [
+    "La empresa tiene una política sistematizada de cero defectos en la producción de productos/servicios.",
+    "La empresa emplea los medios productivos tecnológicamente más avanzados de su sector.",
+    "La empresa dispone de un sistema de información y control de gestión eficiente y eficaz.",
+    "Los medios técnicos y técnológicos de la empresa están preparados para competir en un futuro a corto, medio y largo plazo.",
+    "La empresa es un referente en su sector en I+D+i.",
+    "La excelencia de los procedimientos de la empresa son una principal fuente de ventaja competiva.",
+    "La empresa dispone de página web, y esta se emplea no sólo como exposición virtual de productos/servicios, sino también para establecer relaciones con clientes y proveedores.",
+    "Los productos/servicios que desarrolla nuestra empresa llevan incorporada una tecnología difícil de imitar.",
+    "La empresa es referente en su sector en la optimización, en términos de costo, de su cadena de producción, siendo ésta una de sus principales ventajas competitivas.",
+    "La informatización de la empresa es una fuente de ventaja competitiva clara respecto a sus competidores.",
+    "Los canales de distribución de la empresa son una importante fuente de ventajas competitivas.",
+    "Los productos/servicios de la empresa son altamente, y diferencialmente, valorados por el cliente respecto a nuestros competidores.",
+    "La empresa dispone y ejecuta un sistematico plan de marketing y ventas.",
+    "La empresa tiene optimizada su gestión financiera.",
+    "La empresa busca continuamente el mejorar la relación con sus clientes cortando los plazos de ejecución, personalizando la oferta o mejorando las condiciones de entrega. Pero siempre partiendo de un plan previo.",
+    "La empresa es referente en su sector en el lanzamiento de innovadores productos y servicio de éxito demostrado en el mercado.",
+    "Los Recursos Humanos son especialmente responsables del éxito de la empresa, considerándolos incluso como el principal activo estratégico.",
+    "Se tiene una plantilla altamente motivada, que conoce con claridad las metas, objetivos y estrategias de la organización.",
+    "La empresa siempre trabaja conforme a una estrategia y objetivos claros.",
+    "La gestión del circulante está optimizada.",
+    "Se tiene definido claramente el posicionamiento estratégico de todos los productos de la empresa.",
+    "Se dispone de una política de marca basada en la reputación que la empresa genera, en la gestión de relación con el cliente y en el posicionamiento estratégico previamente definido.",
+    "La cartera de clientes de nuestra empresa está altamente fidelizada, ya que tenemos como principal propósito satisfacerlos día a día.",
+    "Nuestra política y equipo de ventas y marketing es una importante ventaja competitiva de nuestra empresa respecto al sector.",
+    "El servicio al cliente que prestamos es uno de nuestras principales ventajas competitivas respecto a nuestros competidores."
+  ],
+  "pest": [
+    "Los cambios en la composicón demografica de los consumidores de nuestro mercado está teniendo un notable impacto.",
+    "El envejecimiento de la población tiene un importante impacto en la demanda.",
+    "Los nuevos estilos de vida y tendencias originan cambios en la oferta de nuestro sector.",
+    "El envejecimiento de la población tiene un importante impacto en la oferta del sector donde operamos.",
+    "Las variaciones en el nivel de riqueza de la población impactan considerablemente en la demanda de los productos/servicios del sector donde operamos.",
+    "La legislación fiscal afecta muy considerablemente a la economía de las empresas del sector donde operamos.",
+    "La legislación laboral afecta muy considerablemente a la operativa del sector donde actuamos.",
+    "ANÁLISIS EXTERNO MACROENTORNO: PEST",
+    "El impacto que tiene la legislación de protección al consumidor en la manera de producir bienes y/o servicios es muy importante.",
+    "La normativa autonómica tiene un impacto considerable en el funcionamiento del sector donde actuamos.",
+    "Las expectativas de crecimiento económico generales afectan crucialmente al mercado donde operamos.",
+    "La política de tipos de interés es fundamental en el desarrollo financiero del sector donde trabaja nuestra empresa.",
+    "La globalización permite a nuestra industria gozar de importantes oportunidades en nuevos mercados.",
+    "La situación del empleo es fundamental para el desarrollo económico de nuestra empresa y nuestro sector.",
+    "Las expectativas del ciclo económico de nuestro sector impactan en la situación económica de sus empresas.",
+    "La Administración Pública están incentivando el esfuerzo tecnológico de las empresas de nuestro sector.",
+    "Internet, el comercio electrónico, el wireless y otras NTIC están impactando en la demanda de nuestros productos/servicios y en los de la competencia.",
+    "El empleo de NTIC´s es generalizado en el sector donde trabajamos.",
+    "En nuestro sector, es de gran importancia ser pionero o referente en el empleo de aplicaciones tecnológicas.",
+    "En el sector donde operamos, para ser competitivos, es condición \"sine qua non\" innovar constantemente.",
+    "La legislación medioambiental afecta al desarrollo de nuestro sector.",
+    "Los clientes de nuestro mercado exigen que se seamos socialmente responsables, en el plano medioambiental.",
+    "En nuestro sector, la políticas medioambientales son una fuente de ventajas competitivas.",
+    "La creciente preocupación social por el medio ambiente impacta notablemente en la demanda de productos/servicios ofertados en nuestro mercado.",
+    "El factor ecológico es una fuente de diferenciación clara en el sector donde opera nuestra empresa."
+  ],
+  "porter": [
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Crecimiento",
+      "anchors": [
+        "Lento",
+        "Rápido"
+      ]
+    },
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Naturaleza de los competidores",
+      "anchors": [
+        "Muchos",
+        "Pocos"
+      ]
+    },
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Exceso de capacidad productiva",
+      "anchors": [
+        "Si",
+        "No"
+      ]
+    },
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Rentabilidad media del sector",
+      "anchors": [
+        "Baja",
+        "Alta"
+      ]
+    },
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Diferenciación del producto",
+      "anchors": [
+        "Escasa",
+        "Elevada"
+      ]
+    },
+    {
+      "group": "Rivalidad empresas del sector",
+      "label": "Barreras de salida",
+      "anchors": [
+        "Bajas",
+        "Altas"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Economías de escala",
+      "anchors": [
+        "No",
+        "Si"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Necesidad de capital",
+      "anchors": [
+        "Bajas",
+        "Altas"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Acceso a la tecnología",
+      "anchors": [
+        "Fácil",
+        "Difícil"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Reglamentos o leyes limitativos",
+      "anchors": [
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Trámites burocráticos",
+      "anchors": [
+        "No",
+        "Sí"
+      ]
+    },
+    {
+      "group": "Barreras de Entrada",
+      "label": "Reacción esperada actuales competidores",
+      "anchors": [
+        "Escasa",
+        "Enérgica"
+      ]
+    },
+    {
+      "group": "Poder de los Clientes",
+      "label": "Número de clientes",
+      "anchors": [
+        "Pocos",
+        "Muchos"
+      ]
+    },
+    {
+      "group": "Poder de los Clientes",
+      "label": "Posibilidad de integración ascendente",
+      "anchors": [
+        "Pequeña",
+        "Grande"
+      ]
+    },
+    {
+      "group": "Poder de los Clientes",
+      "label": "Rentabilidad de los clientes",
+      "anchors": [
+        "Baja",
+        "Alta"
+      ]
+    },
+    {
+      "group": "Poder de los Clientes",
+      "label": "Costo de cambio de proveedor para cliente",
+      "anchors": [
+        "Bajo",
+        "Alto"
+      ]
+    },
+    {
+      "group": "Productos sustitutos",
+      "label": "Disponibilidad de Productos Sustitutos",
+      "anchors": [
+        "Grande",
+        "Pequeña"
+      ]
+    }
+  ],
+  "textos": {
+    "Presentacion": [
+      "El éxito de las organizaciones reside en gran parte en la capacidad que tienen sus directivos en ejecutar una estrategia más que en la calidad de la estrategia en sí. Su planificación y asignación de recursos son fundamentales para el logro de la misma. En este sentido, un Plan Estratégico puede entenderse como el conjunto de acciones que han de llevarse a cabo para alinear los recursos y potencialidades al objeto de conseguir el estado deseado, es decir, adaptación y adquisición de competitividad empresarial.",
+      "Esta aplicación le ayudará a reflexionar sobre la estrategia que debe llevar a cabo.Visualizará dónde quiere estar, dónde está actualmente y, qué camino tendrá que trazar para llevarle a otro estado.",
+      "Para visualizar dónde quiere estar su empresa tendrá que definir:",
+      "Para entender dónde está, tendrá que llevar a cabo un doble análisis:",
+      "2- Determinar acciones para el facilitar el logro de la estrategia",
+      "Gracias al Plan Estratégico determinará la forma de lograr una ventaja competitiva"
+    ],
+    "Misión": [
+      "La MISIÓN es la razón de ser de la empresa/organización. • Debe ser clara, concisa y compartida. • Siempre orientada hacia el cliente no hacia el producto o servicio. • Refleja el propósito fundamental de la empresa en el mercado.",
+      "En términos generales describe la actividad y razón de ser de la organización y contribuye como una referencia permanente en el proceso de planificación estratégica. Se expresa a través de una oración que define el propósito fundamental de su existencia, estableciendo qué hace la empresa, por qué y para quién lo hace,"
+    ],
+    "Visión": [
+      "La VISION de una empresa define lo que la empresa/organización quiere lograr en el futuro. Es lo que la organización aspira llegar a ser en torno a 5-7 años. • Debe ser retadora, positiva, compartida y coherente con la misión. • Marca el fin último que la estrategia debe seguir. • Proyecta la imagen de destino que se pretende alcanzar.",
+      "La visión debe ser conocida y compartida por todos los miembros de la empresa y también por aquellos que se relacionan con ella."
+    ],
+    "Valores": [
+      "Los VALORES de una empresa son el conjunto de principios, reglas y aspectos culturales con los que se rige la organización. Son las pautas de comportamiento de la empresa y generalmente son pocos, entre 3 y 6. Son tan fundamentales y tan arraigados que casi nunca cambian."
+    ],
+    "OBJETIVOS ESTRATÉGICOS Y UEN": [
+      "El siguiente paso es establecer los objetivos de una empresa en relación al sector al que pertenece.",
+      "Un OBJETIVO ESTRATÉGICO es un fin deseado, clave para la organización y para la consecución de su visión. Para una correcta planificación construya los objetivos formando una pirámide. Los objetivos de cada nivel indican qué es lo que quiere lograrse, siendo la estructura de objetivos que está en el nivel inmediatamente inferior la que indica el cómo. Por tanto, cada objetivo es un fin en sí mismo, pero también a la vez un medio para el logro de los objetivos del nivel superior.",
+      "Objetivos estratégicos: Concretan el contenido de la misión. Suelen referirse al crecimiento, rentabilidad y a la sostenibilidad de la empresa. Su horizonte es entre 3 a 5 años.",
+      "Objetivos operativos: Son la concreción anual de los objetivos estratégicos. Han de ser claros, concisos y medibles. Se puede distinguir dos tipos de objetivos específicos:",
+      "1- Funcionales: objetivos formulados por áreas o departamentos",
+      "2- Operativos: objetivos que se centran en operaciones y acciones concretas",
+      "Cualquier objetivo formulado tiene que presentar los siguientes atributos:",
+      "ESPECÍFICOS: que sean enunciados de forma clara, breve y comprensible",
+      "SENSATOS: lógicos y consecuentes con los recursos disponibles",
+      "En empresas de gran tamaño, se pueden formular los objetivos estratégicos en función de sus diferentes unidades estratégicas de negocio (UEN). Estas UEN se hacen especialmente necesarias en las empresas diversificadas o con multiactividad donde la heterogeneidad de los distintos negocios hace inviable un tratamiento estratégico conjunto de los mismos. Se entiende por unidad estratégica de negocio (UEN) (\"strategic business unit\" [SBU]) un conjunto homogéneo de actividades o negocios, desde el punto de vista estratégico, es decir, para el cual es posible formular una estrategia común y a su vez diferente de la estrategia adecuada para otras actividades y/o unidades estratégicas. La estrategia de cada unidad es autónoma, pero no independiente de las demás unidades estratégicas, puesto que se integran en la estrategia de la empresa.",
+      "La identificación de las UEN se puede realizar a partir de las tres siguientes dimensiones: • Grupos de clientes: Que atiende al tipo de clientes al cual va destinado el producto o servicio. • Funciones: Necesidades cubiertas por el producto o servicio. • Tecnología: Forma en la cual la empresa cubre a través del producto o servicio la necesidad de los clientes.",
+      "En caso de correspoder, comente en este apartado las distintas UEN que tiene su empresa",
+      "A continuación reflexione sobre la misión, visión y valores definidos y establezca los objetivos estratégicos y específicos de su empresa. Le proponemos que comience con definir 3 objetivos estratégicos y dos especificos para cada uno de ellos"
+    ],
+    "ANALISIS INTERNO Y EXTERNO": [
+      "Fijados los objetivos estretégicos se debe analizar las distintas estrategias para lograrlos. De esta forma, las estrategias son los caminos, vías, o enfoques para alcanzar los objetivos. Responden a la pregunta ¿cómo?.",
+      "Para determinar la estrategia, podriamos basarnos en el conjunto de estrategias genéricas y especificas. Esta guía propopone llevar a cabo un análisis interno y externo de la empresa para obtener una matriz cruzada e identificar la estrategia más conveneinte a llevar a cabo.",
+      "Este análisis le permitirá detectar por un lado los factores de éxito (fortalezas y oportunidades), y por otro lado, las debilidades y amenazas que una empresa debe gestionar.",
+      "Para elaborar el análisis FODA de su empresa, le proponemos que utilice distintos instrumentos para el análisis tanto interno como externo."
+    ],
+    "CADENA DE VALOR": [
+      "Todas las actividades de una empresa forman la cadena de valor.",
+      "La Cadena de Valor es un herramienta que permite a la empresa indentificar aquellas actividades o fases que pueden aportarle un mayor valor añadido al producto final. Intenta buscar fuentes de ventaja competitiva.",
+      "La empresa está formada por una secuencia de actividades diseñadas para añadir valor al producto o servicio según las distintas fases, hasta que se llega al cliente final.",
+      "Una cadena de valor genérica está constituida por tres elementos básicos:",
+      "Las Actividades Primarias son aquellas que tienen que ver con el producto/servicio, su producción, logística, comercialización, etc.",
+      "Logística de entrada (recepción, almacenamiento, manipulación de materiales, inspección interna, devoluciones, inventarios,…)",
+      "Operaciones (proceso de fabricación, ensamblaje, mantenimiento de equipos, mecanización, embalaje…)",
+      "Logística de salida (gestión de pedidos, honorarios, almacenamiento de producto terminado, transporte…)",
+      "Marketing y ventas (comercialización, selección del canal de distribución, publicidad, promoción, política de precio…)",
+      "Servicios (reparaciones de productos, instalación, mantenimiento, servicios post - venta, reclamaciones, reajustes del producto…)",
+      "Las Actividades de Soporte o apoyo a las actividades primarias son:",
+      "Infraestructura empresarial (administración, finanzas, contabilidad, calidad, relaciones públicas, asesoría legal, gerencia…)",
+      "Gestión de los recursos humanos (selección, contratación, formación, incentivos…)",
+      "Desarrollo tecnológico (telecomunicaciones, automatización, desarrollo de procesos e ingeniería, diseño, saber hacer, procedimientos, I+D…)",
+      "Abastecimiento (compras de materias primas, consumibles, equipamientos, servicios…)"
+    ],
+    "Analisis Porter": [
+      "El Modelo de las 5 Fuerzas de Porter estudia un determinado negocio en función de la amenaza de nuevos competidores y productos sustituivos, así como el poder de negociación de los proveedores y clientes, teniendo en cuenta el grado de competencia del sector. Esto proporciona una clara imagen de la situación competitiva de un mercado en concreto. El conjunto de las cinco fuerzas determina la intensidad competitiva, la rentabilidad del sector y, de forma derivada, las posibilidades futuras de éste. Por ejemplo, si un sector está obteniendo rendimientos escasos, es dudoso que disponga de recursos para financiar el desarrollo de productos sustitutivos dentro del mismo sector.",
+      "Pasemos a repasar de forma abreviada como funciona cada una de las cinco fuerzas.",
+      "Amenaza de nuevos entrantes. La aparición de nuevas empresas en el sector supone un incremento de recursos, de capacidad y, en principio, un intento de obtener una participación en el mercado a costa de otros que ya la tenían. La posibilidad de entrar en un sector depende fundamentalmente de dos factores: la capacidad de reacción de las empresas que ya están (tecnológica, financiera, productiva, etc.) y las denominadas barreras de entrada (obstáculos para el ingreso). Entre las barreras de entrada, las más características son: Economía de escala. Reducción de costos unitarios debido al volumen (vinculada a menudo a reducciones por efecto experiencia), como por ejemplo, coches, aviones… Grado de diferenciación del producto/servicio. La fidelidad de los clientes obliga a realizar inversiones muy grandes (y arriesgadas) para desalojar al suministrador tradicional. Crítico en los mercados en los que la confianza es fundamental (bancos, farmacéuticas, etc.) Necesidades de capital. Las necesidades de capital, especialmente cuando éste tiene que ser desembolsado inicialmente o su recuperación, en caso de fallo, es difícil, constituye una barrera muy importante (coches, acero, etc.) Costos de cambio. Existen multitud de productos y servicios en los que el comprador tiene que asumir un costo extra si quiere cambiar de proveedor, principalmente por aspectos logísticos (entrenamiento, repuestos, almacenes, etc.) Acceso a los canales de distribución. El control de los canales de distribución puede dificultar seriamente el acceso a un mercado. El canal puede cargar sobreprecios y los competidores bajar los suyos. Otros factores. Dentro de este apartado podemos incluir las patentes, el acceso privilegiado a materias primas, la ubicación, las ayudas gubernamentales, etc.",
+      "Rivalidad de los competidores. La rivalidad aparece cuando uno o varios competidores sienten la presión o ven la oportunidad de mejorar. El grado de rivalidad depende de una serie de factores estructurales, entre los que podemos destacar: Gran número de competidores, o competidores muy equilibrados. Crecimiento lento en el mercado. Cuando los mercados se estancan, la única forma de mejorar los resultados propios es arrebatar cuota a la competencia costos fijos o de almacenamiento elevados. Al darse esa situación, es necesario hacer un gran esfuerzo para operar a plena capacidad, o al menos por encima del punto muerto. Baja diferenciación de productos. El consumidor se ve atraído por el precio, y los competidores tenderán a bajarlo. Intereses estratégicos. En determinados mercados, puede ocurrir que varias empresas importantes intenten, de forma simultánea, establecer una posición sólida y utilicen para ello recursos desproporcionados. Barreras de salida. Cuando los competidores tienen dificultades para salir de un mercado que ha perdido interés, mantendrán una intensidad competitiva alta, si las barreras de salida son importantes. Entre las barreras de salida podemos destacar los activos especializados, los costos fijos de salida, las restricciones sociales o las barreras emocionales.",
+      "Presión de los productos sustitutos: El nivel de precio/calidad de los productos sustitutos limita el nivel de precios de la industria. Los productos sustitutos pueden ser fabricados por empresas pertenecientes o ajenas al sector (situación peligrosa). Las empresas del sector pueden reaccionar en bloque, no hacerlo en absoluto, o cambiar de necesidad satisfecha adaptando el producto (un crucero no puede competir con el avión en el transporte de viajeros, pero es un medio de vacaciones de lujo inigualable). Desde la óptica estratégica, hay que prestar mucha atención a los “sustitutos no evidentes” (ejemplo, videoconferencia contra hotel más avión).",
+      "Poder de negociación de los compradores/clientes. Los compradores fuerzan los precios a la baja y la calidad al alza, en perjuicio del beneficio de la industria. Su poder aumenta si: Están concentrados, o compran grandes volúmenes relativos El costo de la materia prima es importante Los productos no son diferenciados El costo de cambiar de proveedor es pequeño No hay amenaza de integración Tienen información total La calidad no es importante",
+      "Poder de negociación de los proveedores. Los proveedores poderosos pueden amenazar con subir los precios y/o disminuir la calidad. Las empresas del sector pueden ver disminuidos sus beneficios si no consiguen repercutir los incrementos al consumidor final. Su poder aumenta si: Está más concentrado que el sector que compra No están obligados a competir con sustitutivos El comprador no es cliente importante El producto es importante para el comprador El producto está diferenciado Representan una amenaza de integración",
+      "Según Porter, estas fuerzas se encuentran en interacción y cambio permanente. Nuestro objetivo será situar a nuestra empresa en una posición en la que se pueda defender de las amenazas que las fuerzas competitivas plantean."
+    ],
+    "AE PEST": [
+      "PEST es un acrónimo y las letras representan el macro entorno de la empresa.",
+      "Políticos: aquellos factores que puedan determinar la actividad de la empresa. Por ejemplo, la legislación tributaria, laboral, tratados comerciales, normas de medio ambiente, etc.",
+      "Económicos: los factores políticos implican efectos económicos. El comportamiento, la confianza del comprador y su nivel adquisitivo están relacionados con el auge, estacancamiento, recesión y recuperación de la economía. Ejemplos de ellos son; tasas impositivas, tasas de interés, niveles de deuda y ahorro, tasa de empleo, índices de precio, etc.",
+      "Sociales: se enfoca a las fuerzas que actúan dentro de la sociedad y que afectan a las actitudes, opiniones e intereses de las personas. Varían de un país a otro de forma notable. Ejemplos de estas variables son: estratos demográficos, estilos de vida, distribuciones del ingreso, ocio, factores étnicos y religiosos, etc.",
+      "Tecnológicos: este factor es muy importante para casi toda la totalidad de las empresas industriales. La tecnología es una fuerza impulsora de negocios, mejora la calidad y puede reducir los tiempos para el mercadeo. La tecnología puede por tanto eliminar las barreras de entrada pero a veces es difícil la asimilación y adaptación de los cambios tecnológicos por la velocidad de los mismos. Ejemplos de esta variable son: las tasas de obsolescencia tecnológica, los incentivos a la modernización tecnológica, la automatización de los procesos de producción, el impacto de las tecnologías de información, etc.",
+      "El siguiente gráfico reflejará la valoración obtenida en cada una de las variables del diagnóstico macro-entorno.",
+      "A continuación marque con una X para valorar su empresa en función de cada una de las afirmaciones, de tal forma que 0= En total en desacuerdo; 1= No está de acuerdo; 2= Está de acuerdo; 3= Está bastante de acuerdo; 4= En total acuerdo. En caso de no cumplimentar una casilla o duplicar su respuesta le aparecerá el mensaje de error (\"¡REF!)",
+      "1. Los cambios en la composicón demografica de los consumidores de nuestro mercado está teniendo un notable impacto.",
+      "2. El envejecimiento de la población tiene un importante impacto en la demanda.",
+      "3. Los nuevos estilos de vida y tendencias originan cambios en la oferta de nuestro sector.",
+      "4. El envejecimiento de la población tiene un importante impacto en la oferta del sector donde operamos.",
+      "5. Las variaciones en el nivel de riqueza de la población impactan considerablemente en la demanda de los productos/servicios del sector donde operamos.",
+      "6. La legislación fiscal afecta muy considerablemente a la economía de las empresas del sector donde operamos.",
+      "HAY UN NOTABLE IMPACTO DE FACTORES SOCIALES Y DEMOGRÁFICOS EN EL FUNCIONAMIENTO DE LA EMPRESA",
+      "HAY UN NOTABLE IMPACTO DEL FACTOR MEDIO AMBIENTAL EN EL FUNCIONAMIENTO DE LA EMPRESA"
+    ],
+    "IDENTIFICACION  ESTR": [
+      "Tras el análisis realizado habiéndose identificado las oportunidades, amenazas, fortalezas y debilidades, es momento de identificar la estrategia que debe seguir en su empresa para el logro de sus objetivos empresariales.",
+      "Se trata de realizar una Matriz Cruzada tal y como se refleja en el siguente dibujo para identificar la estrategía más conveniente a llevar a cabo.",
+      "Según ha ido completando en las fases anteriores, los factores internos y externos de su empresa son los siguientes:",
+      "Las fortalezas se usan para tomar ventaja en cada una las oportunidades.",
+      "0=En total desacuerdo, 1= No está de acuerdo, 2= Esta de acuerdo, 3= Bastante de acuerdo y 4=En total acuerdo",
+      "0=En total desacuerdo, 1= No está de acuerdo, 2= Esta de acuerdo, 3= Bastante de acuerdo y 4=En total acuerdo",
+      "Superamos las debilidades tomando ventaja de las oportunidades",
+      "0=En total desacuerdo, 1= No está de acuerdo, 2= Esta de acuerdo, 3= Bastante de acuerdo y 4=En total acuerdo",
+      "Las debilidades intensifican notablemente el efecto negativo de las amenazas",
+      "0=En total desacuerdo, 1= No está de acuerdo, 2= Esta de acuerdo, 3= Bastante de acuerdo y 4=En total acuerdo",
+      "Se enfrenta a amenazas externas sin las fortalezas necesarias para luchar con la competencia",
+      "La empresa no puede aprovechar las oportunidades porque carece de preparación adecuada",
+      "La puntuación mayor le indica la estrategia que deberá llevar a cabo."
+    ],
+    "MATRIZ CAME": [
+      "A continuación y para finalizar de elaborar un Plan Estratégico, además de tener identificada la estrategia es necesario determinar acciones que permitan corregir las debilidades, afrontar las amenazas, mantener las fortalezas y explotar las oportunidades.",
+      "Reflexione y anote acciones a llevar a cabo teniendo en cuenta que estas acciones deben favorecer la ejecución exitosa de la estrategia general identificada."
+    ],
+    "FINAL": [
+      "Con su Plan Estratégico definido ya sabe lo que su empresa tiene que hacer de aquí a unos años para alcanzar la misión, favorecer la visión y procurar lograr ventaja competitiva. Pero,se puede estar preguntando:",
+      "¿Cómo puedo saber si las acciones responde a la estrategia identificada?",
+      "Para ello, le proponemos que elabore y diseñe su Cuadro de Mando Integral o Tablero de control",
+      "Tenga presente que lo que de verdad diferencia a una empresa ganadora no es su mayor o menor habilidad para definir brillantes y extensas estrategias sino su capacidad para llevarlas a la práctica sabiendo saltar las barreras que habitualmente se interponen entre el diseño y su ejecución. ( Aplicación Práctica del Cuadro de Mando Integral, 2005, Gestion 2000.com Muñiz, L.; Monfort, E. )"
+    ]
+  }
+}
