@@ -113,7 +113,8 @@ export default async function Resumen({
       </section>
 
       <footer className="border-t pt-4 text-sm opacity-70">
-        Elaborado con la Metodología de Plan Estratégico · FCE UNAM
+        Elaborado con la Metodología de Plan Estratégico · Cátedra de
+        Administración · FCE — Universidad Nacional de Misiones
       </footer>
     </main>
   );

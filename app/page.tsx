@@ -13,12 +13,12 @@ export default function Home() {
       </p>
       <Link
         href="/login"
-        className="rounded-lg bg-blue-600 text-white px-6 py-3 font-medium hover:bg-blue-700"
+        className="rounded-lg bg-[#1F2465] text-white px-6 py-3 font-medium hover:bg-[#3a4487]"
       >
         Comenzar
       </Link>
       <p className="text-sm opacity-60">
-        Proyecto de ejemplo — FCE UNAM · Next.js + Supabase + Vercel
+        Cátedra de Administración · Facultad de Ciencias Económicas — UNaM
       </p>
     </main>
   );

@@ -199,12 +199,12 @@ export default function PasoPage({
         <nav className="mt-4 space-y-1">
           {STEPS.map((s) => (
             <Link key={s.n} href={`/plan/${planId}/paso/${s.n}`}
-              className={`block rounded px-3 py-2 text-sm ${s.n === stepN ? "bg-blue-600 text-white" : "hover:bg-gray-100 dark:hover:bg-gray-900"}`}>
+              className={`block rounded px-3 py-2 text-sm ${s.n === stepN ? "bg-[#1F2465] text-white" : "hover:bg-gray-100 dark:hover:bg-gray-900"}`}>
               {s.n}. {s.title}
             </Link>
           ))}
           <Link href={`/plan/${planId}/resumen`}
-            className="block rounded px-3 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50">
+            className="block rounded px-3 py-2 text-sm font-medium text-[#1F2465] dark:text-[#8f9bd8] hover:bg-[#eae8f6]">
             📄 Resumen ejecutivo
           </Link>
         </nav>
@@ -247,7 +247,7 @@ export default function PasoPage({
 
             {step.kind === "info" && (
               <Link href={`/plan/${planId}/paso/6`}
-                className="inline-block rounded-lg bg-blue-600 text-white px-5 py-2 hover:bg-blue-700">
+                className="inline-block rounded-lg bg-[#1F2465] text-white px-5 py-2 hover:bg-[#3a4487]">
                 Comenzar autodiagnósticos →
               </Link>
             )}
@@ -283,7 +283,7 @@ export default function PasoPage({
                   Potencial de mejora: <b>{Math.round(potencialMejora(answers) * 100)}%</b>
                 </p>
                 <SwotInputs keys={swotKeys} swot={swot} setSwot={setSwot} onBlur={save} />
-                <button onClick={save} className="rounded-lg bg-blue-600 text-white px-5 py-2 hover:bg-blue-700">
+                <button onClick={save} className="rounded-lg bg-[#1F2465] text-white px-5 py-2 hover:bg-[#3a4487]">
                   {saving ? "Guardando…" : "Guardar"}
                 </button>
               </div>
@@ -314,7 +314,7 @@ export default function PasoPage({
                   Total: <b>{porterTotal(answers)}</b> — {porterConclusion(porterTotal(answers))}
                 </p>
                 <SwotInputs keys={swotKeys} swot={swot} setSwot={setSwot} onBlur={save} />
-                <button onClick={save} className="rounded-lg bg-blue-600 text-white px-5 py-2 hover:bg-blue-700">
+                <button onClick={save} className="rounded-lg bg-[#1F2465] text-white px-5 py-2 hover:bg-[#3a4487]">
                   {saving ? "Guardando…" : "Guardar"}
                 </button>
               </div>
@@ -358,7 +358,7 @@ export default function PasoPage({
                       <p>{s.description}</p></>);
                   })()}
                 </div>
-                <button onClick={save} className="rounded-lg bg-blue-600 text-white px-5 py-2 hover:bg-blue-700">
+                <button onClick={save} className="rounded-lg bg-[#1F2465] text-white px-5 py-2 hover:bg-[#3a4487]">
                   {saving ? "Guardando…" : "Guardar"}
                 </button>
               </div>
@@ -389,7 +389,7 @@ export default function PasoPage({
             <Link href={`/plan/${planId}/paso/${stepN - 1}`} className="opacity-70 hover:opacity-100">← Anterior</Link>
           ) : <span />}
           {stepN < 10 ? (
-            <Link href={`/plan/${planId}/paso/${stepN + 1}`} className="font-medium text-blue-600">Siguiente →</Link>
+            <Link href={`/plan/${planId}/paso/${stepN + 1}`} className="font-medium text-[#1F2465] dark:text-[#8f9bd8]">Siguiente →</Link>
           ) : (
             <Link href={`/plan/${planId}/resumen`} className="font-medium text-green-600">Ver resumen ejecutivo →</Link>
           )}

@@ -78,7 +78,7 @@ export default async function Dashboard() {
           placeholder="Nombre de la empresa / proyecto"
           className="flex-1 rounded-lg border px-4 py-2"
         />
-        <button className="rounded-lg bg-blue-600 text-white px-4 py-2 font-medium hover:bg-blue-700">
+        <button className="rounded-lg bg-[#1F2465] text-white px-4 py-2 font-medium hover:bg-[#3a4487]">
           Nuevo plan
         </button>
       </form>
@@ -95,7 +95,7 @@ export default async function Dashboard() {
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <Link
                 href={`/plan/${p.id}/paso/1`}
-                className="rounded bg-blue-600 text-white px-3 py-1 hover:bg-blue-700"
+                className="rounded bg-[#1F2465] text-white px-3 py-1 hover:bg-[#3a4487]"
               >
                 Abrir
               </Link>

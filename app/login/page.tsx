@@ -66,13 +66,13 @@ export default function LoginPage() {
         <div className="flex rounded-lg border overflow-hidden text-sm">
           <button
             onClick={() => { setMode("login"); setError(null); }}
-            className={`flex-1 py-2 ${mode === "login" ? "bg-blue-600 text-white" : ""}`}
+            className={`flex-1 py-2 ${mode === "login" ? "bg-[#1F2465] text-white" : ""}`}
           >
             Ya tengo cuenta
           </button>
           <button
             onClick={() => { setMode("signup"); setError(null); }}
-            className={`flex-1 py-2 ${mode === "signup" ? "bg-blue-600 text-white" : ""}`}
+            className={`flex-1 py-2 ${mode === "signup" ? "bg-[#1F2465] text-white" : ""}`}
           >
             Soy nuevo
           </button>
@@ -118,7 +118,7 @@ export default function LoginPage() {
 
           <button
             disabled={busy}
-            className="w-full rounded-lg bg-blue-600 text-white py-2 font-medium hover:bg-blue-700 disabled:opacity-50"
+            className="w-full rounded-lg bg-[#1F2465] text-white py-2 font-medium hover:bg-[#3a4487] disabled:opacity-50"
           >
             {busy ? "Un momento…" : mode === "login" ? "Ingresar" : "Crear cuenta y entrar"}
           </button>
