@@ -28,18 +28,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <header className="bg-[#1F2465] text-white print:hidden">
           <div className="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div
-                aria-hidden
-                className="h-9 w-9 rounded bg-white/10 border border-white/25 flex items-center justify-center font-bold tracking-tight"
-              >
-                FCE
-              </div>
-              <div className="leading-tight">
-                <p className="font-semibold">Facultad de Ciencias Económicas</p>
-                <p className="text-xs text-white/70">
-                  Universidad Nacional de Misiones
-                </p>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo_fce-imagotipo_negativo.png"
+                alt="Facultad de Ciencias Económicas — UNaM"
+                className="h-10 w-auto"
+              />
+              <p className="text-xs text-white/70 border-l border-white/25 pl-3 leading-tight">
+                Universidad Nacional
+                <br />
+                de Misiones
+              </p>
             </div>
             <p className="text-sm text-white/80 text-right hidden sm:block">
               Cátedra de Administración

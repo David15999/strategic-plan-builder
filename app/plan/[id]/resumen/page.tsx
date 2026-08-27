@@ -48,6 +48,12 @@ export default async function Resumen({
       </div>
 
       <header className="text-center border-b pb-6">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/Logo-FCE-UNaM.png"
+          alt="Facultad de Ciencias Económicas — UNaM"
+          className="h-16 w-auto mx-auto mb-4"
+        />
         <h1 className="text-3xl font-bold">Resumen Ejecutivo del Plan Estratégico</h1>
         <p className="mt-2 text-xl">{plan.name}</p>
         <p className="text-sm opacity-70">
