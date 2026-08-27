@@ -8,6 +8,14 @@ export default function LoginPage() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  async function enterAsGuest() {
+    setError(null);
+    const supabase = createClient();
+    const { error } = await supabase.auth.signInAnonymously();
+    if (error) setError(error.message);
+    else window.location.href = "/dashboard";
+  }
+
   async function sendLink(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
@@ -24,6 +32,13 @@ export default function LoginPage() {
     <main className="min-h-screen flex items-center justify-center p-8">
       <div className="w-full max-w-sm space-y-4">
         <h1 className="text-2xl font-bold">Ingresar</h1>
+        <button
+          onClick={enterAsGuest}
+          className="w-full rounded-lg bg-green-600 text-white py-2 font-medium hover:bg-green-700"
+        >
+          Entrar como invitado (sin registro)
+        </button>
+        <p className="text-center text-sm opacity-60">— o con tu email —</p>
         {sent ? (
           <p className="rounded-lg bg-green-50 border border-green-200 p-4 text-green-800">
             Te enviamos un enlace de acceso a <b>{email}</b>. Revisá tu correo.
