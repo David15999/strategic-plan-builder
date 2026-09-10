@@ -95,9 +95,25 @@ export default async function Resumen({
         </div>
       </section>
 
-      <section className="rounded-lg bg-green-50 border border-green-200 p-4 text-green-900">
+      <section
+        className={`rounded-lg border p-4 ${
+          strategy
+            ? "bg-green-50 border-green-200 text-green-900"
+            : "bg-amber-50 border-amber-200 text-amber-900"
+        }`}
+      >
         <h2 className="text-xl font-bold">Estrategia identificada</h2>
-        <p><b>{strategy.name}</b> ({strategy.relation}, {strategy.score} puntos): {strategy.description}</p>
+        {strategy ? (
+          <p>
+            <b>{strategy.name}</b> ({strategy.relation}, {strategy.score} puntos):{" "}
+            {strategy.description}
+          </p>
+        ) : (
+          <p>
+            Todavía no está determinada. Completá la matriz cruzada del{" "}
+            <b>paso 9</b> para que el sistema identifique tu estrategia.
+          </p>
+        )}
       </section>
 
       <section>

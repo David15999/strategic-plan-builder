@@ -232,7 +232,7 @@ export default function PasoPage({
                 ? "Guardando…"
                 : savedAt
                   ? `✓ Guardado ${savedAt.toLocaleTimeString("es", { hour: "2-digit", minute: "2-digit" })}`
-                  : ""}
+                  : "Se guarda solo"}
             </span>
             <HelpButton tourId="wizard" />
           </div>
@@ -347,6 +347,13 @@ export default function PasoPage({
 
             {step.kind === "matrix" && (
               <div className="space-y-8">
+                {!Object.values(swot).some((t) => t?.trim()) && (
+                  <p className="rounded-lg bg-amber-50 border border-amber-200 p-4 text-amber-900">
+                    Todavía no cargaste tu FODA. Completá los pasos{" "}
+                    <b>6, 7 y 8</b> y tus fortalezas, debilidades, oportunidades
+                    y amenazas van a aparecer acá automáticamente.
+                  </p>
+                )}
                 {matrixDefs.map(({ rel, rows, cols, hint }) => (
                   <div key={rel} className="rounded-lg border p-4">
                     <p className="font-semibold">{rel} — {STRATEGIES[rel].name}</p>
@@ -358,7 +365,14 @@ export default function PasoPage({
                       <tbody>
                         {rows.map((r) => (
                           <tr key={r}>
-                            <th className="px-2 text-right" title={swot[r]}>{r}</th>
+                            <th className="px-2 py-1 text-right font-normal align-middle" title={swot[r]}>
+                              <span className="font-semibold">{r}</span>
+                              {swot[r] && (
+                                <span className="ml-1 opacity-70 hidden sm:inline">
+                                  {swot[r].length > 28 ? `${swot[r].slice(0, 28)}…` : swot[r]}
+                                </span>
+                              )}
+                            </th>
                             {cols.map((c) => (
                               <td key={c} className="px-1 py-1">
                                 <select value={grids[rel][`${r}-${c}`] ?? 0}
@@ -374,11 +388,23 @@ export default function PasoPage({
                         ))}
                       </tbody>
                     </table>
+                    {/* Referencia de las columnas: en el encabezado sólo entra
+                        la sigla, así que el texto va debajo de la tabla. */}
+                    {cols.some((c) => swot[c]) && (
+                      <ul className="mt-2 text-xs opacity-70 space-y-0.5">
+                        {cols.map((c) =>
+                          swot[c] ? (
+                            <li key={c}><b>{c}</b>: {swot[c]}</li>
+                          ) : null
+                        )}
+                      </ul>
+                    )}
                     <p className="mt-2 text-sm">Total {rel}: <b>{totals[rel]}</b></p>
                   </div>
                 ))}
                 <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-green-900">
                   {(() => { const s = recommendedStrategy(totals);
+                    if (!s) return <p>Puntuá las cuatro matrices para conocer la estrategia recomendada.</p>;
                     return (<><p className="font-semibold">Estrategia recomendada: {s.name} ({s.relation}, {s.score} pts)</p>
                       <p>{s.description}</p></>);
                   })()}

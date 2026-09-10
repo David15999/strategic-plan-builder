@@ -49,11 +49,17 @@ export function gridTotal(grid: Record<string, number>): number {
   return Object.values(grid).reduce((a, b) => a + (b || 0), 0);
 }
 
+/**
+ * Devuelve la estrategia con mayor puntaje, o null si la matriz todavía está
+ * vacía: sin puntuar, todos los totales valen 0 y cualquier "ganadora" sería
+ * un resultado inventado en el trabajo del estudiante.
+ */
 export function recommendedStrategy(
   totals: Record<Relation, number>
-): { relation: Relation; name: string; description: string; score: number } {
-  const winner = (Object.keys(totals) as Relation[]).reduce((a, b) =>
-    totals[b] > totals[a] ? b : a
-  );
+): { relation: Relation; name: string; description: string; score: number } | null {
+  const relations = Object.keys(totals) as Relation[];
+  if (relations.every((r) => !totals[r])) return null;
+
+  const winner = relations.reduce((a, b) => (totals[b] > totals[a] ? b : a));
   return { relation: winner, ...STRATEGIES[winner], score: totals[winner] };
 }
