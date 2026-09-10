@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import Tour, { HelpButton } from "@/components/Tour";
 import SignOutButton from "@/components/SignOutButton";
+import DeletePlanButton from "@/components/DeletePlanButton";
 
 export default async function Dashboard() {
   const supabase = await createClient();
@@ -118,9 +119,7 @@ export default async function Dashboard() {
               </form>
               <form action={deletePlan} className="ml-auto">
                 <input type="hidden" name="id" value={p.id} />
-                <button className="rounded border border-red-300 text-red-600 px-3 py-1 hover:bg-red-50">
-                  🗑 Borrar
-                </button>
+                <DeletePlanButton planName={p.name} />
               </form>
             </div>
           </li>
