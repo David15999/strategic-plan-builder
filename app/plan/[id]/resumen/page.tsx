@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { gridTotal, recommendedStrategy, Relation } from "@/lib/scoring";
 import Link from "next/link";
+import PrintButton from "@/components/PrintButton";
 import { redirect } from "next/navigation";
 
 export default async function Resumen({
@@ -43,8 +44,9 @@ export default async function Resumen({
 
   return (
     <main className="max-w-3xl mx-auto p-8 space-y-8 print:p-0">
-      <div className="flex justify-between items-center print:hidden">
+      <div className="flex flex-wrap gap-3 justify-between items-center print:hidden">
         <Link href={`/plan/${id}/paso/10`} className="opacity-70">← Volver al plan</Link>
+        <PrintButton />
       </div>
 
       <header className="text-center border-b pb-6">
