@@ -45,11 +45,16 @@ export default function LoginPage() {
         : await supabase.auth.signInWithPassword({ email, password });
     setBusy(false);
     if (error) {
-      const msg = error.message.includes("Invalid login credentials")
+      const m = error.message;
+      const msg = m.includes("Invalid login credentials")
         ? "Usuario o contraseña incorrectos."
-        : error.message.includes("already registered")
+        : m.includes("already registered") || m.includes("already been registered")
           ? "Ese nombre de usuario ya existe. Elegí otro o ingresá con tu contraseña."
-          : error.message;
+          : m.includes("Failed to fetch") || m.includes("NetworkError")
+            ? "No pudimos conectar con el servidor. Revisá tu conexión y probá de nuevo en unos segundos."
+            : m.includes("rate limit")
+              ? "Demasiados intentos seguidos. Esperá un momento y volvé a probar."
+              : m;
       setError(msg);
     } else {
       window.location.href = "/dashboard";
