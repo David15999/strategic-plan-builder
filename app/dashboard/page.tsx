@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import Tour, { HelpButton } from "@/components/Tour";
+import SignOutButton from "@/components/SignOutButton";
 
 export default async function Dashboard() {
   const supabase = await createClient();
@@ -52,13 +53,6 @@ export default async function Dashboard() {
     revalidatePath("/dashboard");
   }
 
-  async function signOut() {
-    "use server";
-    const supabase = await createClient();
-    await supabase.auth.signOut();
-    redirect("/login");
-  }
-
   return (
     <main className="max-w-3xl mx-auto p-8 space-y-8">
       <Tour tourId="dashboard" />
@@ -67,11 +61,7 @@ export default async function Dashboard() {
         <div className="flex items-center gap-3 text-sm">
           <HelpButton tourId="dashboard" />
           <span className="opacity-60">👤 {username}</span>
-          <form action={signOut}>
-            <button className="rounded border px-3 py-1 opacity-70 hover:opacity-100">
-              Salir
-            </button>
-          </form>
+          <SignOutButton />
         </div>
       </div>
 
