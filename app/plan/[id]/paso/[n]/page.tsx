@@ -2,6 +2,7 @@
 
 import { use, useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { STEPS, INTRO, PLACEHOLDERS } from "@/lib/steps";
 import contenido from "@/lib/content/contenido.json";
@@ -37,6 +38,7 @@ export default function PasoPage({
   const stepN = Math.min(Math.max(parseInt(n) || 1, 1), 10);
   const step = STEPS[stepN - 1];
   const supabase = useMemo(() => createClient(), []);
+  const router = useRouter();
 
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<Date | null>(null);
@@ -220,6 +222,36 @@ export default function PasoPage({
           ready={loaded}
           extraSteps={swotKeys.length ? [{ after: 4, step: SWOT_STEP }] : []}
         />
+
+        {/* Navegación para celular: la barra lateral está oculta en pantallas
+            chicas, y sin esto no habría manera de volver a los planes ni de
+            llegar al resumen salvo avanzando paso por paso hasta el 10. */}
+        <div className="md:hidden flex items-center gap-2 -mt-1">
+          <Link href="/dashboard" className="text-sm opacity-70 whitespace-nowrap">
+            ← Mis planes
+          </Link>
+          <select
+            aria-label="Ir a un paso"
+            value={stepN}
+            onChange={(e) => {
+              const v = e.target.value;
+              router.push(
+                v === "resumen"
+                  ? `/plan/${planId}/resumen`
+                  : `/plan/${planId}/paso/${v}`
+              );
+            }}
+            className="ml-auto min-w-0 flex-1 rounded-lg border px-2 py-2 text-sm"
+          >
+            {STEPS.map((s) => (
+              <option key={s.n} value={s.n}>
+                {s.n}. {s.title}
+              </option>
+            ))}
+            <option value="resumen">📄 Resumen ejecutivo</option>
+          </select>
+        </div>
+
         <div className="flex items-start justify-between gap-4">
           <h1 className="text-2xl font-bold">{step.n}. {step.title}</h1>
           <div className="flex items-center gap-2 shrink-0">
