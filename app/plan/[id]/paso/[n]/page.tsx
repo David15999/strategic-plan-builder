@@ -3,7 +3,7 @@
 import { use, useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
-import { STEPS, INTRO } from "@/lib/steps";
+import { STEPS, INTRO, PLACEHOLDERS } from "@/lib/steps";
 import contenido from "@/lib/content/contenido.json";
 import Tour, { HelpButton } from "@/components/Tour";
 import { SWOT_STEP } from "@/lib/tour";
@@ -245,7 +245,7 @@ export default function PasoPage({
             {step.kind === "text" && (
               <textarea value={text} onChange={(e) => setText(e.target.value)} onBlur={save}
                 rows={10} className="w-full rounded-lg border p-4"
-                placeholder={`Escriba aquí la ${step.title.toLowerCase()} de su empresa…`} />
+                placeholder={PLACEHOLDERS[step.slug]} />
             )}
 
             {step.kind === "objectives" && (

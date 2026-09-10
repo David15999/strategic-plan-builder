@@ -4,12 +4,20 @@ import contenido from "@/lib/content/contenido.json";
 export type Answers = Record<string, number>;
 
 // --- Cadena de valor y PEST: 25 preguntas, escala 0-4 ---
-// Potencial de mejora = 1 - (puntaje obtenido / puntaje máximo)
+// Potencial de mejora = 1 - (puntaje obtenido / puntaje máximo posible).
+// El máximo se calcula sobre las preguntas efectivamente respondidas, para no
+// castigar a quien todavía va por la mitad del cuestionario.
+//
+// "Respondida" es tener una opción marcada, incluido el 0 ("en total
+// desacuerdo"): antes se contaban sólo los valores mayores que cero, así que
+// marcar 0 quedaba como no contestar y el porcentaje salía inflado.
 export function potencialMejora(answers: Answers, total = 25): number {
-  const values = Array.from({ length: total }, (_, i) => answers[String(i)] ?? 0);
-  const answered = values.filter((v) => v > 0).length || total;
-  const score = values.reduce((a, b) => a + b, 0);
-  return 1 - score / (answered * 4);
+  const answered = Array.from({ length: total }, (_, i) => answers[String(i)]).filter(
+    (v): v is number => typeof v === "number"
+  );
+  if (!answered.length) return 1;
+  const score = answered.reduce((a, b) => a + b, 0);
+  return 1 - score / (answered.length * 4);
 }
 
 export function sumaTotal(answers: Answers): number {

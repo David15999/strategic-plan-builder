@@ -1,3 +1,9 @@
+export const PLACEHOLDERS: Record<string, string> = {
+  mision: "Escriba aquí la misión de su empresa…",
+  vision: "Escriba aquí la visión de su empresa…",
+  valores: "Escriba aquí los valores de su empresa…",
+};
+
 export const STEPS = [
   { n: 1, slug: "mision", title: "Misión", kind: "text" },
   { n: 2, slug: "vision", title: "Visión", kind: "text" },
