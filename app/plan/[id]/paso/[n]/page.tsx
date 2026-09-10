@@ -5,6 +5,8 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { STEPS, INTRO } from "@/lib/steps";
 import contenido from "@/lib/content/contenido.json";
+import Tour, { HelpButton } from "@/components/Tour";
+import { SWOT_STEP } from "@/lib/tour";
 import {
   Answers,
   Relation,
@@ -37,6 +39,7 @@ export default function PasoPage({
   const supabase = useMemo(() => createClient(), []);
 
   const [saving, setSaving] = useState(false);
+  const [savedAt, setSavedAt] = useState<Date | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   // Estado por tipo de paso
@@ -164,6 +167,7 @@ export default function PasoPage({
           )
         );
       }
+      setSavedAt(new Date());
     } finally {
       setSaving(false);
     }
@@ -194,7 +198,7 @@ export default function PasoPage({
   return (
     <div className="flex min-h-screen">
       {/* Stepper lateral */}
-      <aside className="w-64 shrink-0 border-r p-4 hidden md:block">
+      <aside className="w-64 shrink-0 border-r p-4 hidden md:block" data-tour="stepper">
         <Link href="/dashboard" className="text-sm opacity-60 hover:opacity-100">← Mis planes</Link>
         <nav className="mt-4 space-y-1">
           {STEPS.map((s) => (
@@ -203,7 +207,7 @@ export default function PasoPage({
               {s.n}. {s.title}
             </Link>
           ))}
-          <Link href={`/plan/${planId}/resumen`}
+          <Link href={`/plan/${planId}/resumen`} data-tour="resumen"
             className="block rounded px-3 py-2 text-sm font-medium text-[#1F2465] dark:text-[#8f9bd8] hover:bg-[#eae8f6]">
             📄 Resumen ejecutivo
           </Link>
@@ -211,12 +215,33 @@ export default function PasoPage({
       </aside>
 
       <main className="flex-1 p-6 md:p-10 max-w-4xl space-y-6">
-        <h1 className="text-2xl font-bold">{step.n}. {step.title}</h1>
+        <Tour
+          tourId="wizard"
+          ready={loaded}
+          extraSteps={swotKeys.length ? [{ after: 4, step: SWOT_STEP }] : []}
+        />
+        <div className="flex items-start justify-between gap-4">
+          <h1 className="text-2xl font-bold">{step.n}. {step.title}</h1>
+          <div className="flex items-center gap-2 shrink-0">
+            <span
+              data-tour="save-status"
+              aria-live="polite"
+              className="text-sm opacity-60 min-w-24 text-right"
+            >
+              {saving
+                ? "Guardando…"
+                : savedAt
+                  ? `✓ Guardado ${savedAt.toLocaleTimeString("es", { hour: "2-digit", minute: "2-digit" })}`
+                  : ""}
+            </span>
+            <HelpButton tourId="wizard" />
+          </div>
+        </div>
         <p className="opacity-80">{INTRO[step.slug]}</p>
         {!loaded ? (
           <p className="opacity-60">Cargando…</p>
         ) : (
-          <>
+          <div data-tour="step-content" className="space-y-6">
             {step.kind === "text" && (
               <textarea value={text} onChange={(e) => setText(e.target.value)} onBlur={save}
                 rows={10} className="w-full rounded-lg border p-4"
@@ -380,7 +405,7 @@ export default function PasoPage({
                 ))}
               </div>
             )}
-          </>
+          </div>
         )}
 
         {/* Navegación */}
@@ -409,7 +434,7 @@ function SwotInputs({ keys, swot, setSwot, onBlur }: {
   const labels: Record<string, string> = { F: "Fortalezas", D: "Debilidades", O: "Oportunidades", A: "Amenazas" };
   const groups = Array.from(new Set(keys.map((k) => k[0])));
   return (
-    <div className="grid md:grid-cols-2 gap-4">
+    <div className="grid md:grid-cols-2 gap-4" data-tour="swot">
       {groups.map((g) => (
         <div key={g} className="rounded-lg border p-4">
           <p className="font-semibold mb-2">{labels[g]}</p>

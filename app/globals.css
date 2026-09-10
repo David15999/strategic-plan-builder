@@ -24,3 +24,53 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Tour guiado (driver.js) con la identidad de la FCE UNaM */
+.driver-popover.spb-tour {
+  background: #ffffff;
+  color: #171717;
+  border-top: 4px solid #1f2465;
+  border-radius: 10px;
+  max-width: 340px;
+  box-shadow: 0 12px 32px rgb(31 36 101 / 0.22);
+}
+
+.driver-popover.spb-tour .driver-popover-title {
+  font-size: 1.05rem;
+  color: #1f2465;
+}
+
+.driver-popover.spb-tour .driver-popover-description {
+  line-height: 1.5;
+}
+
+.driver-popover.spb-tour .driver-popover-progress-text {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.driver-popover.spb-tour .driver-popover-next-btn {
+  background: #1f2465;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  text-shadow: none;
+  padding: 6px 14px;
+}
+
+.driver-popover.spb-tour .driver-popover-next-btn:hover {
+  background: #3a4487;
+}
+
+.driver-popover.spb-tour .driver-popover-prev-btn {
+  background: transparent;
+  border: 1px solid #c9cbe0;
+  border-radius: 6px;
+  color: #1f2465;
+  text-shadow: none;
+  padding: 6px 14px;
+}
+
+.driver-popover.spb-tour .driver-popover-arrow {
+  border-color: #ffffff;
+}
